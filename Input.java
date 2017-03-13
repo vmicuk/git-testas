@@ -1,11 +1,19 @@
 import java.util.Scanner;
 
 public class Input {
-	public static void main(String[] args) {
+	private String name;
 	Scanner sc = new Scanner(System.in);
-	System.out.print("įvesti bet ką iš konsolės: ");
-	String text = sc.nextLine();
-	System.out.println(text);
+
+	public Input() {}
+
+	public String getName() {
+	return name;	
+	}
+	
+	public String insertName(){
+	System.out.print("Insert your name: ");
+	name = sc.nextLine();
 	sc.close();
-}
+	return name;	
+	}
 }
